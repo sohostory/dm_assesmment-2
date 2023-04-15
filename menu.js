@@ -209,7 +209,7 @@ console.log("Problem 4:", filteredFood);
 const filterByProperty = (property, number, type) => {
   const filterFoodArr = foodArr.filter((food) => {
     if (type === "above") {
-      return food[property] > number;
+      return food[property] > number; // the problem did not specify greater than or equal too, so didn't include in this. I could have done >=
     } else {
       return food[property] < number;
     }
